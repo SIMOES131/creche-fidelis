@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creche Fidélis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho"> <!-- O (p) é o pedding--><!--(sticky-top) é para o cabeçalho acompanhar a barra de rolagem-->
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-1">Creche Fidélis  26 anos</h1> <!--O (navbar-brand) é usado para estilizar o nome com o estilo do Bootstrap-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"> <!--Estamos criando um menu haburguer--> <!--precisão fazer esses dois atributos pra que o menu hamburger funcione (data-bs-toggle="collapse" data-bs-target="#menu-navegacao")-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao"> <!--vamos fazer o menu se econder no botão quando a tela fechar-->
+                <ul class="nav nav-pills d-block d-md-flex"> <!--a partir do (d-md-flex) teremos o display-flex--><!-- O (nav nav-pills) é para que os links tenha uma aparência de botão-->
+                    <li class="nav-item fw-bold">  <!--A classe (nav-item) é necessária para ativar o efeito pills-->
+                        <a href="#sobre-o-restaurante" class="nav-link"> <!--O (href="#sobre-o-restaurante") é para ativar o link-->
+                            <i class="bi bi-house-door me-1"></i> <!--Esse incone foi pego do site do bootstrap. O (me-1 é equivalente ao margin right do CSS)--> 
+                            Sobre a Creche Fidélis
+                        </a> <!--A classe (nav-link) é necessária para ativar o efeito pills-->
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link"> <!--O (#eventos) ativa quando estivermos na seção eventos-->
+                            <i class="bi bi-calendar-check me-1"></i> <!--Aqui só mudamos o incone cm a escrita-->
+                            Etapas de ensino
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold"> <!--O (fw-bold) é a mesma coisa do negrito do CSS (font-weight)-->
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i> <!--Aqui só mudamos o incone cm a escrita-->
+                            Nossos projetos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i> <!--Aqui só mudamos o incone cm a escrita-->
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true"> <!--Criamos essa div para remover o item active do cabeçalho--> <!--O (data-bs-smooth-scroll="true) é para quando clicarmos no links do botões o título da secção não ficar escondido-->
+        <section id="sobre-o-restaurante"> <!--Sessão do carousel precisa ter um id-->
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel"> <!--O (id="carousel") é necessário para podermos ativar o botão de prev e next--> <!--Esse atributo é necessário para o carousel trocar de imagens (data-bs-ride="carousel")--><!--A div do carousel precisa ter a (class="carousel slide")-->
+                <div class="carousel-inner"> <!--Essa div precisa ter a (class="carousel-inner")-->
+                    <div class="carousel-item active" data-bs-interval="3000"><!--Esse atributo é necessário para o carousel trocar de imagens (data-bs-interval="1000")--> <!--A div onde vai ficar as imagens precisa ter a (class="carousel-item")-->
+                       <img class="w-100" src="Imagens/Carousel/0.jpg" atl="Foto do espaço interno">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000"> <!--A div onde vai ficar as imagens precisa ter a (class="carousel-item")-->
+                        <img class="w-100" src="Imagens/Carousel/1.jpg" atl="Duas taças de vinho">
+                     </div>
+                     <div class="carousel-item" data-bs-interval="3000"> <!--A div onde vai ficar as imagens precisa ter a (class="carousel-item")-->
+                        <img class="w-100" src="Imagens/Carousel/2.jpg" atl="Uma mesa com comida">
+                     </div>
+                     <div class="carousel-item" data-bs-interval="3000"> <!--A div onde vai ficar as imagens precisa ter a (class="carousel-item")-->
+                        <img class="w-100" src="Imagens/Carousel/3.jpg" atl="Uma mesa com comida">
+                     </div>
+                     <div class="carousel-item" data-bs-interval="3000"> <!--A div onde vai ficar as imagens precisa ter a (class="carousel-item")-->
+                        <img class="w-100" src="Imagens/Carousel/4.jpg" atl="Uma mesa com comida">
+                     </div>
+                     <div class="carousel-item" data-bs-interval="3000"> <!--A div onde vai ficar as imagens precisa ter a (class="carousel-item")-->
+                        <img class="w-100 h-100" src="Imagens/Carousel/8.jpg" atl="Uma mesa com comida">
+                     </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"> <!--Esse botão é para passar as imagens do carousel está. Ele é adicionado logo depois da div inner-->
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"> <!--Eu sou fazer uma para o botão prev e outro para o botão next-->
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <!--Vamos adicionar o botão para mostrar em qual imagem está o carousel-->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button> <!--A (Classe="active") é necesária para funcionar o botão-->
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="5"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="Imagens/Sobre a Creche/2.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0"> <!--Aqui colocamos o (mt-md-0) para que a (margin-top: 3) seja aplicada somente para telas menores-->
+                            <h2 class="section-title">Sobre <span class="text-colored">a creche</span></h2><!--Criamos o span para fazer parte do texo ficar com outra cor-->
+                            <p>
+                                A Creche Municipal Fidélis Pereira de Sousa foi fundada no dia 01 de janeiro de 1998 e recebe esse nome em homenagem ao falecido vereador Fidélis Pereira de Sousa.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3> <!--Precisamos adicionar a (classe="text-colored") por conta da mudança no CSS-->
+                            <p>
+                                A Creche Fidélis dispõe de amplo espaço, composto por 8 salas de aula, dois parques infantis, pátio coberto e descoberto, direção, secretaria, sala dos professores e funcionários, cantina, almoxarifado, sala de arquivo, banheiros adaptados para crianças, banheiros para adultos, entre outras instalações.
+                            </p>
+                            <!--<ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Etapas <span class="text-colored">de ensino</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="Imagens/Etapas de ensino/Berçários.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-emoji-heart-eyes"></i> <!--adicionando um incone-->
+                            Berçários
+                        </h3>
+                        <p>
+                            Crianças de 1 a 3 anos de idade.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagens/Etapas de ensino/7.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-emoji-dizzy"></i>
+                            Pré I
+                        </h3>
+                        <p>
+                            Crianças de 4 anos de idade.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagens/Etapas de ensino/Pré II.jpeg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-emoji-kiss"></i>
+                            Pré II
+                        </h3>
+                        <p>
+                            Crianças de 5 anos de idade.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div classe="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nossos <span class=text-colored>projetos</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2"> <!--Aqui vamos criar uma barra lateral com duas colunas-->
+                        <nav class="nav nav-pills flex-colum nav-cardapio"> <!--adicionamos a class(nav-cardapio) para podermos estilizar os botões no CSS--><!--O Pills deixa os botões um ao lado do outro e flex colum quebra esse padrão e deixa um ebaixo do outro--> <!--O (nav-pills) da aparência de botão-->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold tex-start nav-link active text-colored">Alimentação saudável</button> <!--O (data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool") é para ativar a mudança de imagens atráves do ID que foi criado-->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold tex-start nav-link text-colored">Dia do indio</button> <!--O (text-colored) foi a classe que criamos para deixar o cor laranja-->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold tex-start nav-link text-colored">Dia mundial da água</button> <!--O ( tex-start) traz o texto para esquerda do container-->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold tex-start nav-link text-colored">Páscoa</button> <!--O (fw-bold) deixa a fonte em negrito-->
+                            <!--<button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold tex-start nav-link text-colored">Outros</button>-->
+                        </nav>
+                    </aside>
+                    <div class="col-md-10"> <!--Aqui vamos criar o conteúdo do cardápio com as 10 colunas restantes-->
+                        <div class="tab-content"> <!--aqui vamos criar as abas para os conteúdos dos botões-->
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Alimentação saudável/1.jpg" alt="coca-cola">
+                                        <!--<h5 class="tex-colored fw-bold mt-2"> nome</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Alimentação saudável/3.jpg" alt="coca-cola">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Alimentação saudável/4.jpg" alt="coca-cola">
+                                       <!--<h5 class="tex-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Alimentação saudável/5.jpg" alt="coca-cola">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia do Indio/3.jpeg" alt="vinho">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia do Indio/4.jpeg" alt="vinho">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia do Indio/5.jpeg" alt="vinho">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia do Indio/7.jpeg" alt="vinho">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia do Indio/8.jpeg" alt="vinho">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia do Indio/9.jpeg" alt="vinho">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia mundial da água/1.jpg" alt="Nome da entrada">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Nome da entrada</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia mundial da água/3.jpg" alt="Nome da entrada">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Nome da entrada</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Dia mundial da água/5.jpg" alt="Nome da entrada">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Nome da entrada</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Páscoa/1.jpg" alt="Pizza">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Pizza</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Páscoa/2.jpg" alt="Pizza">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Pizza</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Páscoa/3.jpg" alt="Pizza">
+                                        <!-- <h5 class="tex-colored fw-bold mt-2">Pizza</h5>
+                                       <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Projetos/Páscoa/4.jpg" alt="Pizza">
+                                        <!--<h5 class="tex-colored fw-bold mt-2">Pizza</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/bolo.jpg" alt="bolo de chocolate">
+                                        <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/cupcake.jpg" alt="cupcake">
+                                        <h5 class="tex-colored fw-bold mt-2">Cupcake</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>   
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2> 
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label> <!--Aqui adicionamos a classe do bootstrap para formulários-->
+                                <input type="text" id="nome" class="form-control" required> <!--Aqui adicionamos a classe do bootstrap para formulários-->
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label> <!--Aqui adicionamos a classe do bootstrap para formulários-->
+                                <input type="email" id="email" class="form-control" required> <!--Aqui adicionamos a classe do bootstrap para formulários-->
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opicional)</label> <!--Aqui adicionamos a classe do bootstrap para formulários-->
+                                <input type="tel" id="telefone" class="form-control"> <!--Aqui adicionamos a classe do bootstrap para formulários-->
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label> <!--Aqui adicionamos a classe do bootstrap para formulários-->
+                                <textarea class="form-control" id="mensagem" required></textarea> <!--Aqui adicionamos a classe do bootstrap para formulários-->
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links"> <!--Criamos essa classe para estilizar o ul-->
+                                <li class="fs-5">
+                                    <a href="https://www.facebook.com/profile.php?id=100085487831865">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="https://www.instagram.com/crechefidelis/?igsh=MWRremtjMWdkcW55NA%3D%3D">
+                                        <i class="bi bi-instagram text-colored ms-1 me-1"></i> <!--O (ms) é margem na esquerda e o (me) margem na direita-->
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Antônio F. Pinheiro, 111 - Distrito de Barra Nova, Barra do Choça-BA.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
