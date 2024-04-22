@@ -20,7 +20,7 @@
 <body>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho"> <!-- O (p) é o pedding--><!--(sticky-top) é para o cabeçalho acompanhar a barra de rolagem-->
         <div class="container">
-            <h1 class="navbar-brand m-0 section-title fs-1">Creche Fidélis  26 anos</h1> <!--O (navbar-brand) é usado para estilizar o nome com o estilo do Bootstrap-->
+            <h1 class="navbar-brand m-0 section-title fs-1">Creche Fidélis  26 Anos</h1> <!--O (navbar-brand) é usado para estilizar o nome com o estilo do Bootstrap-->
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"> <!--Estamos criando um menu haburguer--> <!--precisão fazer esses dois atributos pra que o menu hamburger funcione (data-bs-toggle="collapse" data-bs-target="#menu-navegacao")-->
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,19 +35,19 @@
                     <li class="nav-item fw-bold">
                         <a href="#eventos" class="nav-link"> <!--O (#eventos) ativa quando estivermos na seção eventos-->
                             <i class="bi bi-calendar-check me-1"></i> <!--Aqui só mudamos o incone cm a escrita-->
-                            Etapas de ensino
+                            Etapas de Ensino
                         </a>
                     </li>
                     <li class="nav-item fw-bold"> <!--O (fw-bold) é a mesma coisa do negrito do CSS (font-weight)-->
                         <a href="#cardapio" class="nav-link">
                             <i class="bi bi-card-text me-1"></i> <!--Aqui só mudamos o incone cm a escrita-->
-                            Nossos projetos
+                            Nossos Projetos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a href="#fale-conosco" class="nav-link">
                             <i class="bi bi-chat-left-text me-1"></i> <!--Aqui só mudamos o incone cm a escrita-->
-                            Fale conosco
+                            Fale Conosco
                         </a>
                     </li>
                 </ul>
@@ -98,11 +98,11 @@
                             <img src="Imagens/Sobre a Creche/2.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
                         </div>
                         <div class="col-md-7 mt-3 mt-md-0"> <!--Aqui colocamos o (mt-md-0) para que a (margin-top: 3) seja aplicada somente para telas menores-->
-                            <h2 class="section-title">Sobre <span class="text-colored">a creche</span></h2><!--Criamos o span para fazer parte do texo ficar com outra cor-->
+                            <h2 class="section-title">Sobre <span class="text-colored">a Creche</span></h2><!--Criamos o span para fazer parte do texo ficar com outra cor-->
                             <p>
                                 A Creche Municipal Fidélis Pereira de Sousa foi fundada no dia 01 de janeiro de 1998 e recebe esse nome em homenagem ao falecido vereador Fidélis Pereira de Sousa.
                             </p>
-                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3> <!--Precisamos adicionar a (classe="text-colored") por conta da mudança no CSS-->
+                            <h3 class="section-title">Sobre <span class="text-colored">o Espaço</span></h3> <!--Precisamos adicionar a (classe="text-colored") por conta da mudança no CSS-->
                             <p>
                                 A Creche Fidélis dispõe de amplo espaço, composto por 8 salas de aula, dois parques infantis, pátio coberto e descoberto, direção, secretaria, sala dos professores e funcionários, cantina, almoxarifado, sala de arquivo, banheiros adaptados para crianças, banheiros para adultos, entre outras instalações.
                             </p>
@@ -120,7 +120,7 @@
         <section id="eventos" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Etapas <span class="text-colored">de ensino</span></h2>
+                    <h2 class="section-title text-center">Etapas <span class="text-colored">de Ensino</span></h2>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-4">
@@ -158,7 +158,7 @@
         <section id="cardapio" class="pt-5 pb-5">
             <div classe="container">
                 <div class="row">
-                    <h2 class="section-title text-center mb-5">Nossos <span class=text-colored>projetos</span></h2>
+                    <h2 class="section-title text-center mb-5">Nossos <span class=text-colored>Projetos</span></h2>
                 </div>
                 <div class="row">
                     <aside class="col-md-2"> <!--Aqui vamos criar uma barra lateral com duas colunas-->
@@ -167,7 +167,7 @@
                             <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold tex-start nav-link text-colored">Dia do indio</button> <!--O (text-colored) foi a classe que criamos para deixar o cor laranja-->
                             <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold tex-start nav-link text-colored">Dia mundial da água</button> <!--O ( tex-start) traz o texto para esquerda do container-->
                             <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold tex-start nav-link text-colored">Páscoa</button> <!--O (fw-bold) deixa a fonte em negrito-->
-                            <!--<button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold tex-start nav-link text-colored">Outros</button>-->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold tex-start nav-link text-colored">Dia do livro didático</button>
                         </nav>
                     </aside>
                     <div class="col-md-10"> <!--Aqui vamos criar o conteúdo do cardápio com as 10 colunas restantes-->
@@ -309,24 +309,94 @@
                                 </div>
                             </div>
 
-                            <!--<div class="tab-pane" id="sobremesas">
+                            <div class="tab-pane" id="sobremesas">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/sobremesas/bolo.jpg" alt="bolo de chocolate">
-                                        <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/1.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
                                         <p>
                                             Lorem, impsum dolor site amet consectetur adipisicing elit.
-                                        </p>
+                                        </p>-->
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/sobremesas/cupcake.jpg" alt="cupcake">
-                                        <h5 class="tex-colored fw-bold mt-2">Cupcake</h5>
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/2.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
                                         <p>
                                             Lorem, impsum dolor site amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>   
+                                        </p>-->
+                                    </div>  
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/3.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/4.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/5.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/6.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/6.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/7.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/8.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/9.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/10.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="Imagens/Dia do livro didático/11.jpeg" alt="bolo de chocolate">
+                                       <!-- <h5 class="tex-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem, impsum dolor site amet consectetur adipisicing elit.
+                                        </p>-->
+                                    </div>
                                 </div>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
